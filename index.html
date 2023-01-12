@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/57d7b546f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="navItem">Home</li>
+            <li class="navItem">Add Location</li>
+            <li class="navItem">View Location</li>
+            <li class="navItem">Dashboard</li>
+            <li class="navItem">Services</li>
+        </ul>
+        <div class="add-location">
+            <a href="form.html">Add Your Location</a>
+        </div>
+    </nav>
+    <div class="big-container">
+        <div class="first-container">
+            <div class="first-left-container">
+                <h1>Welcome, Here's the travelling Adda</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis enim quasi qui provident laborum? Officia voluptatibus a iusto repudiandae voluptatum consequatur eligendi, iste, aperiam reprehenderit culpa voluptate fugit vel soluta?</p>
+            </div>
+            <div class="first-right-container">
+                <img id="plane" src="aeroplane.png" alt="">
+                <img id="world" src="world.png" alt="">
+                <img id="bus" src="realBus.png" alt="">
+                <img id="taxi" src="realTaxi.png" alt="">
+            </div>
+        </div>
+        <div class="second-container">
+            <h2>
+                Your Current Location
+            </h2>
+            <div class="location-info">
+                <div class="left-info">
+                    <div class="left-info-upper"></div>
+                    <div class="left-info-lower"></div>
+                    <div id="latitude">Your Latitude</div>
+                    <div id="longitude">Your Longitude</div>
+                    <button onclick="getLocation()" id="see-your-location">Button</button>
+                </div>
+                <div id="map">
+                </div>
+            </div>
+        </div>
+        <div class="third-container">
+            <h2>
+                Search any vehicle's current location
+            </h2>
+            <div class="search-box">
+                <div class="search-input">
+                    <input class="input-number" placeholder="Vehicle number (Ex. MH-01-AE-1234)" type="text">
+                    <button id="search-vehicle">Search Vehicle</button>
+                </div>
+                <div id="map1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Location Guide</a></li>
+                        <li><a href="#">Map Access</a></li>
+                        <li><a href="#">Current Trending Travellers</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Used Tech stack</h4>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">MongoDB</a></li>
+                        <li><a href="#">Google API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
